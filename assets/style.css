@@ -105,7 +105,7 @@ header.nav{
   display:flex; align-items:center; gap:0.6rem;
 }
 .logo span{ color:var(--signal-pink); }
-.logo-img{ width:26px; height:26px; object-fit:contain; }
+.logo-img{ width:100px; height:100px; object-fit:contain; }
 nav.links{ display:flex; gap:1.6rem; font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.06em; }
 nav.links a{ color:var(--text-mid); transition:color .2s; }
 nav.links a:hover{ color:var(--text-hi); }
