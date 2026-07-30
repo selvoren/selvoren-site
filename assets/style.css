@@ -146,8 +146,8 @@ nav.links a:hover{ color:var(--text-hi); }
 
 /* ---------- HERO (index) ---------- */
 .hero{
-  min-height:100svh; display:flex; flex-direction:column; justify-content:center;
-  padding-top:6rem; position:relative; overflow:hidden;
+  min-height:auto; display:flex; flex-direction:column; justify-content:center;
+  padding-top:9rem; padding-bottom:2rem; position:relative; overflow:hidden;
 }
 .hero::after{
   content:""; position:absolute; inset:0;
