@@ -157,8 +157,9 @@ nav.links a:hover{ color:var(--text-hi); }
     radial-gradient(50% 40% at 85% 100%, rgba(94,194,255,0.10), transparent 70%);
   pointer-events:none; z-index:-1;
 }
+.hero .wrap{ text-align:center; }
 .hero-emblem{
-  width:clamp(64px, 9vw, 96px); opacity:0.92; margin-bottom:1.2rem;
+  width:clamp(64px, 9vw, 96px); opacity:0.92; margin-bottom:1.2rem; margin-inline:auto;
   filter:drop-shadow(0 0 22px rgba(255,45,111,0.25));
 }
 .hero h1{ font-size:clamp(2.6rem, 9vw, 6rem); line-height:0.95; letter-spacing:0.02em; }
@@ -167,7 +168,7 @@ nav.links a:hover{ color:var(--text-hi); }
   margin-top:1.4rem; letter-spacing:0.08em;
 }
 .hero .lede{ max-width:52ch; color:var(--text-mid); margin-top:1.6rem; font-size:1.05rem; }
-.hero-actions{ display:flex; flex-wrap:wrap; gap:1rem; margin-top:2.6rem; }
+.hero-actions{ display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:2.6rem; }
 .btn{
   font-family:var(--font-mono); font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase;
   padding:0.9rem 1.6rem; border:1px solid var(--line); border-radius:var(--radius);
@@ -178,7 +179,7 @@ nav.links a:hover{ color:var(--text-hi); }
 .btn-ghost:hover{ border-color:var(--text-mid); }
 .btn-disabled{ opacity:0.35; pointer-events:none; }
 
-.platform-buttons{ display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.2rem; }
+.platform-buttons{ display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:1.2rem; }
 .btn-platform{
   display:flex; align-items:center; gap:0.7rem;
   font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
