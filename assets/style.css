@@ -162,7 +162,7 @@ nav.links a:hover{ color:var(--text-hi); }
   width:clamp(242px, 30.8vw, 396px); opacity:0.92; margin-bottom:1.2rem; margin-inline:auto;
   filter:drop-shadow(0 0 22px rgba(255,45,111,0.25));
 }
-.hero h1{ font-size:clamp(2.6rem, 9vw, 6rem); line-height:0.95; letter-spacing:0.02em; }
+.hero h1{ font-size:clamp(2.6rem, 9vw, 6rem); line-height:0.95; letter-spacing:0.02em; font-weight:300; }
 .hero .tagline{
   font-family:var(--font-mono); color:var(--signal-pink); font-size:clamp(0.85rem, 2vw, 1rem);
   margin-top:1.4rem; letter-spacing:0.08em;
