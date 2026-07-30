@@ -33,6 +33,8 @@ body{
   font-family:var(--font-body);
   line-height:1.6;
   overflow-x:hidden;
+  position:relative;
+  z-index:0;
 }
 img{ max-width:100%; display:block; }
 a{ color:inherit; text-decoration:none; }
@@ -132,18 +134,20 @@ nav.links a:hover{ color:var(--text-hi); }
   .return-signal{ font-size:0.66rem; padding:0.5rem 0.8rem; }
 }
 
+/* ---------- FIXED PAGE BACKGROUND ---------- */
+.page-bg{
+  position:fixed; inset:-3% -3%; z-index:-2;
+  background:
+    linear-gradient(180deg, rgba(7,6,11,0.55) 0%, rgba(7,6,11,0.78) 45%, rgba(7,6,11,0.92) 100%),
+    url('hero-bg.jpg') center 30% / cover no-repeat;
+  transition:transform .25s ease-out;
+  will-change:transform;
+}
+
 /* ---------- HERO (index) ---------- */
 .hero{
   min-height:100svh; display:flex; flex-direction:column; justify-content:center;
   padding-top:6rem; position:relative; overflow:hidden;
-}
-.hero-parallax{
-  position:absolute; inset:-3% -3%; z-index:-2;
-  background:
-    linear-gradient(180deg, rgba(7,6,11,0.55) 0%, rgba(7,6,11,0.75) 55%, var(--bg-void) 96%),
-    url('hero-bg.jpg') center 30% / cover no-repeat;
-  transition:transform .25s ease-out;
-  will-change:transform;
 }
 .hero::after{
   content:""; position:absolute; inset:0;
