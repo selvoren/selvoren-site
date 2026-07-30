@@ -163,9 +163,11 @@ nav.links a:hover{ color:var(--text-hi); }
   filter:drop-shadow(0 0 22px rgba(255,45,111,0.25));
 }
 .hero h1{ font-size:clamp(2.6rem, 9vw, 6rem); line-height:0.95; letter-spacing:0.08em; font-weight:300; }
+.hero-title-group{ display:inline-block; }
 .hero .tagline{
-  font-family:var(--font-mono); color:var(--signal-pink); font-size:clamp(0.85rem, 2vw, 1rem);
-  margin-top:1.4rem; letter-spacing:0.08em;
+  font-family:var(--font-mono); color:#ABF3FF; font-size:clamp(1.7rem, 4vw, 2rem);
+  margin-top:1.4rem; letter-spacing:0.08em; display:block; width:100%;
+  text-align:justify; text-align-last:justify;
 }
 .hero .lede{ max-width:52ch; color:var(--text-mid); margin-top:1.6rem; font-size:1.05rem; }
 .hero-actions{ display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:2.6rem; }
