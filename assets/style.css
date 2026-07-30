@@ -207,7 +207,7 @@ nav.links a:hover{ color:var(--text-hi); }
 .release-box .arrow{ font-size:1.4rem; color:var(--text-mid); flex:none; }
 
 /* ---------- STATUS TICKER ---------- */
-.status-strip{ border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding-block:1.4rem; overflow:hidden; white-space:nowrap; }
+.status-strip{ display:flex; justify-content:center; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding-block:1.4rem; overflow:hidden; white-space:nowrap; }
 .status-strip .track{
   display:inline-flex; gap:2.5rem; font-family:var(--font-mono); font-size:0.72rem;
   letter-spacing:0.15em; color:var(--text-low); animation:ticker 28s linear infinite;
