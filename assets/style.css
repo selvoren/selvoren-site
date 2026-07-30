@@ -167,10 +167,20 @@ nav.links a:hover{ color:var(--text-hi); }
   padding:0.9rem 1.6rem; border:1px solid var(--line);
   transition:border-color .2s, background .2s; display:inline-block;
 }
-.btn-primary{ background:var(--signal-pink); border-color:var(--signal-pink); color:#160409; font-weight:600; }
-.btn-primary:hover{ background:#ff5286; }
+.btn-primary{ background:transparent; border-color:var(--signal-pink); color:var(--signal-pink); font-weight:600; }
+.btn-primary:hover{ background:rgba(255,45,111,0.1); }
 .btn-ghost:hover{ border-color:var(--text-mid); }
 .btn-disabled{ opacity:0.35; pointer-events:none; }
+
+.platform-buttons{ display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.2rem; }
+.btn-platform{
+  display:flex; align-items:center; gap:0.6rem;
+  font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
+  padding:0.8rem 1.4rem; border:1px solid var(--line);
+  background:rgba(255,255,255,0.02); color:var(--text-mid);
+  opacity:0.5; pointer-events:none;
+}
+.btn-platform svg{ width:18px; height:18px; flex:none; }
 
 /* ---------- BIO / MANIFESTO TEXT ---------- */
 .manifesto{ max-width:74ch; margin-inline:auto; text-align:center; }
