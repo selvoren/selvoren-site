@@ -111,8 +111,8 @@ nav.links a:hover{ color:var(--text-hi); }
 
 .return-signal{
   position:fixed; top:1.2rem; right:var(--gap-inline); z-index:100;
-  font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.1em;
-  border:1px solid var(--line); padding:0.6rem 1rem;
+  font-family:var(--font-mono); font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase;
+  border:1px solid var(--line); padding:0.6rem 1rem; border-radius:var(--radius);
   background:rgba(7,6,11,0.6); backdrop-filter:blur(6px);
   display:flex; align-items:center; gap:0.5rem;
   transition:border-color .2s;
