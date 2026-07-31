@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 1.9
+   Version: 2.1
    ============================================================ */
 
 :root{
@@ -209,7 +209,7 @@ nav.links a:hover{ color:var(--text-hi); }
   background:rgba(255,255,255,0.02);
   transition:border-color .2s, transform .2s ease;
 }
-.release-box:hover{ transform:scale(1.05); }
+a.release-box:hover{ transform:scale(1.08); }
 .release-box:hover{ border-color:var(--signal-pink); }
 .release-box .cover{ width:120px; height:120px; flex:none; overflow:hidden; border:1px solid var(--line); border-radius:calc(var(--radius) - 4px); }
 .release-box .cover img{ width:100%; height:100%; object-fit:cover; }
