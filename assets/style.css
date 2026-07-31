@@ -168,13 +168,13 @@ nav.links a:hover{ color:var(--text-hi); }
   margin-top:1.4rem; letter-spacing:0.19em; word-spacing:-0.5em; font-weight: 100;
 }
 .hero .lede{ max-width:52ch; margin-inline:auto; color:var(--text-mid); margin-top:1.8rem; font-size:1.12rem; text-align:center; letter-spacing:0.42em; }
-.hero-actions{ display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:2.6rem; }
+.hero-actions{ display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; margin-top:2.6rem; margin-bottom:3.5rem; }
 .btn{
   font-family:var(--font-mono); font-size:0.82rem; letter-spacing:0.1em; text-transform:uppercase;
-  padding:0.9rem 1.6rem; border:1px solid var(--line); border-radius:var(--radius);
+  padding:1.2rem 2rem; border:1px solid var(--line); border-radius:var(--radius);
   transition:border-color .2s, background .2s; display:inline-block;
 }
-.btn-primary{ background:transparent; border-color:var(--signal-pink); color:#FFFFFF75; font-weight:600; font-size:1.4rem; min-width:460px; text-align:center; letter-spacing:0.42em; }
+.btn-primary{ background:transparent; border-color:var(--signal-pink); color:#FFFFFF75; font-weight:600; font-size:1.4rem; min-width:460px; min-height:80px; text-align:center; letter-spacing:0.42em; display:flex; align-items:center; justify-content:center; }
 .btn-primary:hover{ background:rgba(255,45,111,0.1); }
 .btn-ghost:hover{ border-color:var(--text-mid); }
 .btn-disabled{ opacity:0.35; pointer-events:none; }
