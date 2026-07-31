@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.4
+   Version: 3.6
    ============================================================ */
 
 :root{
@@ -105,7 +105,7 @@ header.nav{
   font-family:var(--font-display); font-weight:700; font-size:1.15rem; letter-spacing:0.08em;
   display:flex; align-items:center; gap:1rem;
 }
-.logo span{ color:var(--signal-pink); margin-left:-0.00em; }
+.logo span{ color:var(--signal-pink); }
 .logo-img{ width:40px; height:40px; object-fit:contain; }
 nav.links{ display:flex; gap:1.6rem; font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.06em; }
 nav.links a{ color:var(--text-mid); transition:color .2s; }
