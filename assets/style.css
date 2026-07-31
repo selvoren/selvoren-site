@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 1.0
+   Version: 1.2
    ============================================================ */
 
 :root{
@@ -189,7 +189,7 @@ nav.links a:hover{ color:var(--text-hi); }
   color:var(--text-mid);
   box-shadow:1.875px 0 10px 0 #1E31E3;
   pointer-events:none;
-  flex:1 1 260px; max-width:320px;
+  flex:1 1 0; min-width:0; max-width:320px;
 }
 .btn-platform svg{ width:20px; height:20px; flex:none; }
 
