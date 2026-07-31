@@ -174,7 +174,7 @@ nav.links a:hover{ color:var(--text-hi); }
   padding:0.9rem 1.6rem; border:1px solid var(--line); border-radius:var(--radius);
   transition:border-color .2s, background .2s; display:inline-block;
 }
-.btn-primary{ background:transparent; border-color:var(--signal-pink); color:#FFFFFF75; font-weight:600; font-size:1.1rem; min-width:460px; text-align:center; letter-spacing:0.42em; }
+.btn-primary{ background:transparent; border-color:var(--signal-pink); color:#FFFFFF75; font-weight:600; font-size:1.4rem; min-width:460px; text-align:center; letter-spacing:0.42em; }
 .btn-primary:hover{ background:rgba(255,45,111,0.1); }
 .btn-ghost:hover{ border-color:var(--text-mid); }
 .btn-disabled{ opacity:0.35; pointer-events:none; }
