@@ -183,12 +183,12 @@ nav.links a:hover{ color:var(--text-hi); }
 .btn-platform{
   display:flex; align-items:center; justify-content:center; gap:0.7rem;
   font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
-  padding:0.85rem 1.5rem; border:1px solid #2A2F3A; border-radius:var(--radius);
+  padding:1.4rem 1.5rem; border:1px solid #2A2F3A; border-radius:var(--radius);
   background:#070B12;
   color:var(--text-mid);
   box-shadow:1.875px 0 10px 0 #1E31E3;
   pointer-events:none;
-  flex:1 1 260px; max-width:300px;
+  flex:1 1 260px; max-width:320px;
 }
 .btn-platform svg{ width:20px; height:20px; flex:none; }
 
