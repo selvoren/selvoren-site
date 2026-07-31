@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.6
+   Version: 3.8
    ============================================================ */
 
 :root{
@@ -246,7 +246,8 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 
 .arc-card{
   display:block; position:relative; aspect-ratio:4/3; overflow:hidden; border-radius:var(--radius);
-  background:var(--bg-panel); border:1px solid var(--line);
+  background:var(--bg-panel); border:1px solid var(--signal-pink);
+  box-shadow:0 0 8rem 0 rgba(252,3,3,0.15);
 }
 .arc-card.c-blue{ border-color:rgba(30,49,227,0.45); box-shadow:0 0 6rem 0 rgba(30,49,227,0.15); }
 .arc-card.c-pink{ border-color:rgba(252,3,3,0.45); box-shadow:0 0 6rem 0 rgba(252,3,3,0.12); }
