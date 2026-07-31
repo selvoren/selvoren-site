@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 2.9
+   Version: 3.0
    ============================================================ */
 
 :root{
@@ -196,7 +196,7 @@ nav.links a:hover{ color:var(--text-hi); }
 
 /* ---------- BIO / MANIFESTO TEXT ---------- */
 .manifesto{ max-width:74ch; margin-inline:auto; text-align:center; }
-.manifesto p{ color:var(--text-mid); font-size:1.02rem; margin-bottom:1.4rem; }
+.manifesto p{ color:var(--text-mid); font-size:1.02rem; line-height:2.2; margin-bottom:1.4rem; }
 .manifesto p:last-child{ margin-bottom:0; }
 .manifesto .lines{ margin-top:2.4rem; font-family:var(--font-mono); font-size:0.85rem; letter-spacing:0.04em; color:var(--text-low); }
 .manifesto .lines p{ font-size:inherit; color:inherit; margin-bottom:1.4rem; }
