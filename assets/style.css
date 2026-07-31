@@ -183,9 +183,11 @@ nav.links a:hover{ color:var(--text-hi); }
 .btn-platform{
   display:flex; align-items:center; gap:0.7rem;
   font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;
-  padding:0.85rem 1.5rem; border:none; border-radius:999px;
-  background:rgba(255,255,255,0.92); color:#111;
-  opacity:0.55; pointer-events:none;
+  padding:0.85rem 1.5rem; border:1px solid #2A2F3A; border-radius:999px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0) 45%), #070B12;
+  color:var(--text-mid);
+  box-shadow:1.875px 0 10px 0 #1E31E3;
+  pointer-events:none;
 }
 .btn-platform svg{ width:20px; height:20px; flex:none; }
 
