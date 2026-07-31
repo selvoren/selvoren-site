@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 1.6
+   Version: 1.7
    ============================================================ */
 
 :root{
@@ -175,8 +175,8 @@ nav.links a:hover{ color:var(--text-hi); }
   padding:1.2rem 2rem; border:1px solid var(--line); border-radius:var(--radius);
   transition:border-color .2s, background .2s; display:inline-block;
 }
-.btn-primary{ background:transparent; border-color:var(--signal-pink); color:#FFFFFF75; font-weight:600; font-size:1.4rem; min-width:460px; min-height:80px; text-align:center; letter-spacing:0.42em; display:flex; align-items:center; justify-content:center; }
-.btn-primary:hover{ background:rgba(255,45,111,0.1); }
+.btn-primary{ background:transparent; border-color:var(--signal-pink); color:#FFFFFF75; font-weight:600; font-size:1.4rem; min-width:460px; min-height:80px; text-align:center; letter-spacing:0.42em; display:flex; align-items:center; justify-content:center; transition:transform .2s ease; }
+.btn-primary:hover{ transform:scale(1.05); }
 .btn-ghost:hover{ border-color:var(--text-mid); }
 .btn-disabled{ opacity:0.35; pointer-events:none; }
 
