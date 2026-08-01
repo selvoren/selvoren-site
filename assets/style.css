@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.24
+   Version: 3.25
    ============================================================ */
 
 :root{
@@ -294,6 +294,7 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 
 /* ---------- ARC SUB-PAGE HERO ---------- */
 .arc-hero{ padding-top:8rem; }
+.arc-hero .eyebrow{ justify-content:center; }
 .arc-hero h1{ text-align:center; font-size:clamp(2.2rem,6vw,3.4rem); margin-bottom:2.2rem; }
 .arc-hero .frame{
   max-width:1000px; margin-inline:auto; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
