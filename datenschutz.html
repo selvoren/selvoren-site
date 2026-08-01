@@ -36,10 +36,17 @@
     <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten gemäß den geltenden Datenschutzvorschriften.</p>
 
     <h2>Kontakt</h2>
-    <p>Bei Fragen zum Datenschutz: <a href="mailto:selvoren@gmail.com">selvoren@gmail.com</a></p>
+    <p>Bei Fragen zum Datenschutz: <a href="#" class="email-protect" data-user="contact" data-domain="selvoren.com">contact [at] selvoren.com</a></p>
   </section>
 </main>
 
 <script src="assets/script.js"></script>
+<script>
+  document.querySelectorAll('.email-protect').forEach(function(el){
+    var addr = el.dataset.user + '@' + el.dataset.domain;
+    el.href = 'mailto:' + addr;
+    el.textContent = addr;
+  });
+</script>
 </body>
 </html>
