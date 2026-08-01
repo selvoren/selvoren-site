@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.21
+   Version: 3.22
    ============================================================ */
 
 :root{
@@ -202,6 +202,11 @@ nav.links a:hover{ color:var(--text-hi); }
 .manifesto .lines{ margin-top:2.4rem; font-family:var(--font-mono); font-size:0.85rem; letter-spacing:0.04em; color:var(--text-low); }
 .manifesto .lines p{ font-size:inherit; color:inherit; margin-bottom:1.4rem; }
 .manifesto .lines.lines--flush{ margin-top:0; }
+.manifesto .lines-group{ margin-bottom:2.8rem; }
+.manifesto .lines-group:last-child{ margin-bottom:0; }
+.manifesto .lines-group p:last-child{ margin-bottom:0; }
+.manifesto .lines-group--tight p{ margin-bottom:0.3rem; }
+.manifesto .lines-group--tight p:last-child{ margin-bottom:0; }
 
 .manifesto .eyebrow{ justify-content:center; margin-bottom:1rem; }
 .manifesto .eyebrow span{ color:var(--signal-cyan); }
@@ -257,7 +262,7 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .section-transition .divider{ max-width:320px; margin-inline:auto; }
 .transmission-tag{
   font-family:var(--font-mono); font-size:9px; letter-spacing:0.3em; text-transform:uppercase;
-  color:var(--text-hi); opacity:0.15; margin-top:0.8rem;
+  color:var(--text-hi); opacity:0.28; margin-top:0.8rem;
 }
 
 /* ---------- STORY GRID (shared: arcs, standalone, and future story cards) ---------- */
