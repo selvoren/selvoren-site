@@ -148,7 +148,7 @@ nav.links a:hover{ color:var(--text-hi); }
 /* ---------- HERO (index) ---------- */
 .hero{
   min-height:auto; display:flex; flex-direction:column; justify-content:center;
-  padding-top:6.5rem; padding-bottom:2rem; position:relative;
+  padding-top:6.0rem; padding-bottom:2rem; position:relative;
 }
 .hero-glow-zone{ position:relative; }
 .hero-glow-zone::after{
