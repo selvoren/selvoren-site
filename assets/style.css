@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.12
+   Version: 3.13
    ============================================================ */
 
 :root{
@@ -259,7 +259,7 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .arc-card.c-pink:hover{ border-color:var(--signal-pink); }
 .arc-card:hover img{ transform:scale(1.05); filter:saturate(1.05); }
 
-.arc-caption{ margin-top:1rem; }
+.arc-caption{ margin-top:1rem; text-align:center; }
 .arc-caption h3{ font-size:1.3rem; }
 .arc-caption p{ color:var(--text-mid); font-size:0.9rem; line-height:1.5; margin-top:0.5rem; }
 
