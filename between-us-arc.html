@@ -20,7 +20,7 @@
 <main>
   <!-- ============ ARC HERO ============ -->
   <section class="arc-hero c-blue wrap">
-    <p class="eyebrow c-blue reveal">Story Arc 01</p>
+    <p class="eyebrow c-blue reveal decode">Story Arc 01</p>
     <h1 class="reveal">BETWEEN US ARC</h1>
     <div class="frame reveal">
       <img src="assets/between-us-arc-bg.jpg" alt="Between Us Arc">
@@ -129,5 +129,30 @@
 </footer>
 
 <script src="assets/script.js"></script>
+<script>
+  (function(){
+    var chars = "!<>-_\\/[]{}—=+*^?#";
+    document.querySelectorAll('.eyebrow.decode').forEach(function(el){
+      var target = el.textContent;
+      var len = target.length;
+      var frame = 0;
+      var totalFrames = 24;
+      var timer = setInterval(function(){
+        var out = '';
+        for (var i = 0; i < len; i++){
+          if (i < frame){ out += target[i]; }
+          else if (target[i] === ' '){ out += ' '; }
+          else { out += chars[Math.floor(Math.random()*chars.length)]; }
+        }
+        el.textContent = out;
+        frame += len / totalFrames;
+        if (frame >= len){
+          el.textContent = target;
+          clearInterval(timer);
+        }
+      }, 35);
+    });
+  })();
+</script>
 </body>
 </html>
