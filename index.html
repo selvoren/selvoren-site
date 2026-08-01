@@ -79,41 +79,40 @@
 
   <hr class="divider">
 
-  <!-- ============ STORY ARCS ============ -->
+  <!-- ============ STORY ARCHIVES ============ -->
+  <!-- Shared classes for all story boxes (arcs + standalone). Add future stories as another
+       .story-item inside .story-grid — use .story-card--tile for a square-ish poster card,
+       or leave it off for a wide banner like Other Worlds. -->
   <section id="arcs" class="wrap" style="padding-top:calc(var(--gap-section) + 3rem); padding-bottom:var(--gap-section);">
     <div class="section-head centered reveal">
       <h2 style="text-align:center;">STORY ARCHIVES</h2>
       <p>Connected worlds. Ongoing transmissions.<br>Each arc follows its own characters, conflicts and memories — told across multiple songs and cinematic chapters.</p>
     </div>
-    <div class="arc-grid">
-      <div class="arc-item reveal">
-        <a href="between-us-arc.html" class="arc-card">
+    <div class="story-grid">
+      <div class="story-item reveal">
+        <a href="between-us-arc.html" class="story-card story-card--tile">
           <img src="assets/between-us-arc-card.jpg" alt="Between Us Arc — a story of distance, a connection that remains">
         </a>
-        <div class="arc-caption">
+        <div class="story-caption">
           <p>A story of distance, memory and the connection that never truly disappears.</p>
         </div>
       </div>
-      <div class="arc-item reveal">
-        <a href="static-arc.html" class="arc-card">
+      <div class="story-item reveal">
+        <a href="static-arc.html" class="story-card story-card--tile">
           <img src="assets/static-arc-card.jpg" alt="Static Arc — a signal without mercy, a system without a face">
         </a>
-        <div class="arc-caption">
+        <div class="story-caption">
           <p>A dystopian archive of surveillance, control and disappearing meaning.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ INDEPENDENT STORIES + OTHER WORLDS BANNER ============ -->
-  <section class="wrap reveal" style="padding-top:calc(var(--gap-section) * 0.75 - 4.5em);">
-    <a href="standalone-signals.html" class="worlds-banner reveal">
-      <div class="frame">
-        <img src="assets/other-worlds-banner.png" alt="Other Worlds — Some worlds stand alone, others are connected.">
+      <div class="story-item story-item--wide reveal">
+        <a href="standalone-signals.html" class="story-card">
+          <img src="assets/other-worlds-banner.png" alt="Other Worlds — Some worlds stand alone, others are connected.">
+        </a>
+        <div class="story-caption">
+          <p>Standalone transmissions from the Selvoren universe.<br>Every world stands on its own.</p>
+        </div>
       </div>
-    </a>
-    <div class="section-head centered reveal" style="margin-top:1.6rem; margin-bottom:0;">
-      <p>Standalone transmissions from the Selvoren universe.<br>Every world stands on its own.</p>
     </div>
   </section>
 
