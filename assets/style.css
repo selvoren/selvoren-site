@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.26
+   Version: 3.27
    ============================================================ */
 
 :root{
@@ -293,7 +293,7 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .story-caption p{ color:var(--text-mid); font-size:0.9rem; line-height:1.5; margin-top:0.5rem; }
 
 /* ---------- ARC SUB-PAGE HERO ---------- */
-.arc-hero{ padding-top:8rem; }
+.arc-hero{ padding-top:8rem; padding-bottom:3rem; }
 .arc-hero .eyebrow{ justify-content:center; }
 .arc-hero h1{ text-align:center; font-size:clamp(2.2rem,6vw,3.4rem); margin-bottom:2.2rem; }
 .arc-hero .frame{
@@ -326,6 +326,8 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .arc-hero.c-pink .chapter-progress .seg.done{ background:var(--signal-pink); }
 
 /* ---------- SONG GRID (sub-pages) ---------- */
+.section-songs{ padding-top:2rem; }
+.section-head + .song-grid{ margin-top:0; }
 .song-grid{ display:grid; grid-template-columns:repeat(3, 1fr); gap:1.25rem; margin-top:3.5rem; }
 @media (max-width:900px){ .song-grid{ grid-template-columns:repeat(2, 1fr); } }
 @media (max-width:600px){ .song-grid{ grid-template-columns:1fr; } }
@@ -346,10 +348,21 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .song-tile:nth-child(3n+1):hover img{ filter:saturate(1.15) hue-rotate(-6deg) brightness(1.04); }
 .song-tile:nth-child(3n+2):hover img{ filter:saturate(1.1) brightness(1.02); }
 .song-tile:nth-child(3n+3):hover img{ filter:saturate(1.15) hue-rotate(8deg) brightness(1.03); }
+.song-tile .song-number{
+  position:absolute; top:0; left:0; z-index:1; padding:0.7rem 0.9rem;
+  background:linear-gradient(180deg, rgba(7,6,11,0.75) 0%, transparent 100%);
+  font-family:var(--font-mono); font-size:0.78rem; letter-spacing:0.12em;
+  color:var(--text-hi); opacity:0.75;
+}
 .song-tile .title{
   position:absolute; left:0; right:0; bottom:0; padding:1rem 1.1rem;
   background:linear-gradient(0deg, rgba(7,6,11,0.88) 20%, transparent);
   font-family:var(--font-display); font-weight:600; font-size:1.02rem; letter-spacing:0.02em;
+}
+.song-tile .song-tagline{
+  display:block; margin-top:0.35rem;
+  font-family:var(--font-mono); font-weight:400; font-size:0.72rem; letter-spacing:0.04em;
+  color:var(--text-mid); text-transform:none;
 }
 .song-grid.c-blue .song-tile:hover{ border-color:var(--signal-blue); }
 .song-grid.c-pink .song-tile:hover{ border-color:var(--signal-pink); }
