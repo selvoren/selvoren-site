@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.31
+   Version: 3.32
    ============================================================ */
 
 :root{
@@ -240,6 +240,7 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
   display:inline-flex; gap:2.5rem; font-family:var(--font-mono); font-size:0.72rem;
   letter-spacing:0.15em; color:var(--text-low); animation:ticker 28s linear infinite;
 }
+.status-strip .track.ticker--slow{ animation-duration:98s; }
 .status-strip .track span{ color:var(--signal-cyan); }
 .status-strip .track span.c-pink{ color:var(--signal-pink); }
 @keyframes ticker{ from{ transform:translateX(0);} to{ transform:translateX(-50%);} }
