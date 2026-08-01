@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.33
+   Version: 3.34
    ============================================================ */
 
 :root{
@@ -251,6 +251,12 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
   60%{ clip-path:inset(60% 0 5% 0); transform:translateX(2px); color:var(--signal-cyan); }
   100%{ clip-path:inset(0 0 0 0); transform:translateX(0); color:var(--signal-cyan); text-shadow:none; }
 }
+@keyframes glitch-blip-neutral{
+  0%{ clip-path:inset(0 0 0 0); transform:translateX(0); text-shadow:none; }
+  30%{ clip-path:inset(20% 0 50% 0); transform:translateX(-2px); text-shadow:2px 0 var(--signal-pink), -2px 0 var(--signal-blue); }
+  60%{ clip-path:inset(60% 0 5% 0); transform:translateX(2px); }
+  100%{ clip-path:inset(0 0 0 0); transform:translateX(0); text-shadow:none; }
+}
 
 /* ---------- STORY ARCS GRID ---------- */
 .section-head{ margin-bottom:2.6rem; }
@@ -284,6 +290,7 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .story-card.c-pink{ border-color:rgba(252,3,3,0.45); box-shadow:0 0 6rem 0 rgba(252,3,3,0.12); }
 .story-card img{ display:block; width:100%; transition:transform .6s ease, filter .6s ease; filter:saturate(0.9); }
 .story-card:hover img{ transform:scale(1.05); filter:saturate(1.05); }
+.story-item:hover .story-caption p{ animation:glitch-blip-neutral 0.18s steps(2, end); }
 .story-card.c-blue:hover{ border-color:var(--signal-blue); }
 .story-card.c-pink:hover{ border-color:var(--signal-pink); }
 
@@ -299,7 +306,19 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .arc-hero .eyebrow{ justify-content:center; }
 .arc-hero h1{ text-align:center; font-size:clamp(2.2rem,6vw,3.4rem); margin-bottom:2.2rem; }
 .arc-hero .frame{
+  position:relative;
   max-width:1000px; margin-inline:auto; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
+}
+.arc-hero .frame::after{
+  content:""; position:absolute; left:0; right:0; top:0; height:2px;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation:scanline 7s linear infinite; pointer-events:none; mix-blend-mode:overlay;
+}
+@keyframes scanline{
+  0%{ top:0%; opacity:0; }
+  8%{ opacity:1; }
+  92%{ opacity:1; }
+  100%{ top:100%; opacity:0; }
 }
 .arc-hero .frame img{ transition:transform .25s ease-out; will-change:transform; }
 .arc-hero.c-blue .frame{ border-color:var(--signal-blue); box-shadow:0 0 8rem 0 rgba(30,49,227,0.15); }
@@ -323,9 +342,23 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
   display:flex; gap:5px; height:4px;
 }
 .chapter-progress .seg{ flex:1; background:var(--line); position:relative; overflow:hidden; }
-.chapter-progress .seg.done{ background:var(--signal-cyan); }
-.arc-hero.c-blue .chapter-progress .seg.done{ background:var(--signal-blue); }
-.arc-hero.c-pink .chapter-progress .seg.done{ background:var(--signal-pink); }
+.chapter-progress .seg.done::before{
+  content:""; position:absolute; inset:0; background:var(--signal-cyan);
+  transform:scaleX(0); transform-origin:left; transition:transform 0.5s ease;
+}
+.chapter-progress.reveal.in .seg.done::before{ transform:scaleX(1); }
+.chapter-progress .seg:nth-child(1).done::before{ transition-delay:0.00s; }
+.chapter-progress .seg:nth-child(2).done::before{ transition-delay:0.05s; }
+.chapter-progress .seg:nth-child(3).done::before{ transition-delay:0.10s; }
+.chapter-progress .seg:nth-child(4).done::before{ transition-delay:0.15s; }
+.chapter-progress .seg:nth-child(5).done::before{ transition-delay:0.20s; }
+.chapter-progress .seg:nth-child(6).done::before{ transition-delay:0.25s; }
+.chapter-progress .seg:nth-child(7).done::before{ transition-delay:0.30s; }
+.chapter-progress .seg:nth-child(8).done::before{ transition-delay:0.35s; }
+.chapter-progress .seg:nth-child(9).done::before{ transition-delay:0.40s; }
+.chapter-progress .seg:nth-child(10).done::before{ transition-delay:0.45s; }
+.arc-hero.c-blue .chapter-progress .seg.done::before{ background:var(--signal-blue); }
+.arc-hero.c-pink .chapter-progress .seg.done::before{ background:var(--signal-pink); }
 
 /* ---------- SONG GRID (sub-pages) ---------- */
 .section-songs{ padding-top:2rem; padding-bottom:4.375rem; }
@@ -363,6 +396,7 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
   background:linear-gradient(0deg, rgba(7,6,11,0.88) 20%, transparent);
   font-family:var(--font-display); font-weight:600; font-size:1.02rem; letter-spacing:0.02em;
 }
+.song-tile:hover .title{ animation:glitch-blip-neutral 0.18s steps(2, end); }
 .song-tile .song-tagline{
   display:block; margin-top:0.35rem;
   font-family:var(--font-mono); font-weight:400; font-size:0.72rem; letter-spacing:0.04em;
@@ -406,6 +440,9 @@ footer small{ color:var(--text-low); font-size:0.72rem; font-family:var(--font-m
   .reveal{ opacity:1; transform:none; transition:none; }
   .status-strip .track{ animation:none; }
   .waveform path{ stroke-dashoffset:0; transition:none; }
+  .arc-hero .frame::after{ animation:none; opacity:0; }
+  .song-tile:hover .title, .story-item:hover .story-caption p{ animation:none; }
+  .chapter-progress .seg.done::before{ transition:none; transform:scaleX(1); }
 }
 
 :focus-visible{ outline:2px solid var(--signal-cyan); outline-offset:3px; }
