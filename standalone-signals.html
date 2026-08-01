@@ -20,7 +20,7 @@
 <main>
   <!-- ============ ARC HERO ============ -->
   <section class="arc-hero c-cyan wrap">
-    <p class="eyebrow reveal">Independent stories</p>
+    <p class="eyebrow reveal decode">Independent stories</p>
     <h1 class="reveal">OTHER WORLDS</h1>
     <div class="frame reveal">
       <img src="assets/standalone-signals-bg.png" alt="Standalone Signals">
@@ -98,5 +98,30 @@
 </footer>
 
 <script src="assets/script.js"></script>
+<script>
+  (function(){
+    var chars = "!<>-_\\/[]{}—=+*^?#";
+    document.querySelectorAll('.eyebrow.decode').forEach(function(el){
+      var target = el.textContent;
+      var len = target.length;
+      var frame = 0;
+      var totalFrames = 24;
+      var timer = setInterval(function(){
+        var out = '';
+        for (var i = 0; i < len; i++){
+          if (i < frame){ out += target[i]; }
+          else if (target[i] === ' '){ out += ' '; }
+          else { out += chars[Math.floor(Math.random()*chars.length)]; }
+        }
+        el.textContent = out;
+        frame += len / totalFrames;
+        if (frame >= len){
+          el.textContent = target;
+          clearInterval(timer);
+        }
+      }, 35);
+    });
+  })();
+</script>
 </body>
 </html>
