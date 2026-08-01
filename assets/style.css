@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.19
+   Version: 3.20
    ============================================================ */
 
 :root{
@@ -251,6 +251,14 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .section-head p{ color:var(--text-mid); max-width:56ch; margin-top:0.8rem; }
 .section-head.centered{ text-align:center; margin-inline:auto; }
 .section-head.centered p{ margin-inline:auto; }
+
+/* ---------- SECTION TRANSITION ---------- */
+.section-transition{ text-align:center; }
+.section-transition .divider{ max-width:320px; margin-inline:auto; }
+.transmission-tag{
+  font-family:var(--font-mono); font-size:9px; letter-spacing:0.3em; text-transform:uppercase;
+  color:var(--text-hi); opacity:0.15; margin-top:0.8rem;
+}
 
 /* ---------- STORY GRID (shared: arcs, standalone, and future story cards) ---------- */
 .section-arcs{ padding-top:calc(var(--gap-section) + 3rem); padding-bottom:var(--gap-section); }
