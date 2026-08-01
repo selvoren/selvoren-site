@@ -24,7 +24,7 @@
     <p>Sven Rasche<br>Dorfstraße 67<br>15910-Rietzneuendorf-Staakow<br>Deutschland</p>
 
     <h2>Kontakt</h2>
-    <p>E-Mail: <a href="mailto:selvoren@gmail.com">selvoren@gmail.com</a></p>
+    <p>E-Mail: <a href="#" class="email-protect" data-user="contact" data-domain="selvoren.com">contact [at] selvoren.com</a></p>
 
     <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
     <p>Sven Rasche<br>Dorfstraße 67<br>15910-Rietzneuendorf-Staakow<br>Deutschland</p>
@@ -41,5 +41,12 @@
 </main>
 
 <script src="assets/script.js"></script>
+<script>
+  document.querySelectorAll('.email-protect').forEach(function(el){
+    var addr = el.dataset.user + '@' + el.dataset.domain;
+    el.href = 'mailto:' + addr;
+    el.textContent = addr;
+  });
+</script>
 </body>
 </html>
