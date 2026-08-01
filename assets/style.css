@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.28
+   Version: 3.29
    ============================================================ */
 
 :root{
@@ -235,7 +235,7 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .release-box .arrow{ font-family:var(--font-mono); font-size:1rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--text-mid); flex:none; }
 
 /* ---------- STATUS TICKER ---------- */
-.status-strip{ display:flex; justify-content:center; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding-block:1.4rem; overflow:hidden; white-space:nowrap; }
+.status-strip{ display:flex; justify-content:flex-start; border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding-block:1.4rem; overflow:hidden; white-space:nowrap; }
 .status-strip .track{
   display:inline-flex; gap:2.5rem; font-family:var(--font-mono); font-size:0.72rem;
   letter-spacing:0.15em; color:var(--text-low); animation:ticker 28s linear infinite;
