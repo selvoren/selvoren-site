@@ -1,6 +1,6 @@
 /* ============================================================
    SELVOREN — shared stylesheet
-   Version: 3.39
+   Version: 3.40
    ============================================================ */
 
 :root{
@@ -424,6 +424,8 @@ a.release-box:hover{ transform:scale(1.08); border-color:var(--signal-blue); box
 .legal-page h2{ font-size:1.15rem; margin-top:2.2rem; margin-bottom:0.6rem; color:var(--signal-pink); }
 .legal-page p{ color:var(--text-mid); margin-bottom:0.4rem; }
 .legal-page a{ color:var(--signal-cyan); }
+.legal-page ul{ color:var(--text-mid); margin:0.4rem 0 0.8rem 1.4rem; }
+.legal-page li{ margin-bottom:0.3rem; }
 
 /* ---------- ERROR PAGE (404) ---------- */
 .error-page{
