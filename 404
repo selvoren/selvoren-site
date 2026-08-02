@@ -6,9 +6,7 @@
 <title>Signal Lost — 404 | Selvoren</title>
 <meta name="description" content="This transmission could not be found.">
 <link rel="icon" href="assets/logo-mark.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="assets/mobile.css">
 </head>
