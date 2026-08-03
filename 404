@@ -5,15 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Signal Lost — 404 | Selvoren</title>
 <meta name="description" content="This transmission could not be found.">
+<link rel="preload" as="image" href="assets/hero-bg.jpg" fetchpriority="high">
 <link rel="icon" href="assets/logo-mark.png" type="image/png">
 <link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="assets/mobile.css">
 </head>
 <body>
-
 <div class="page-bg" data-parallax></div>
-
 <main>
   <section class="wrap error-page">
     <p class="eyebrow c-pink">Error 404</p>
@@ -22,7 +21,6 @@
     <a class="btn btn--pink" href="index.html">Return to signal</a>
   </section>
 </main>
-
 <script src="assets/script.js"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "6a6a973da118420a9c30302784692297"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
